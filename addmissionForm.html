@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Addmision Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 38rem 5rem;
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center">
+    <div class="my-10">
+        <div class="grid1 w-[45rem]">
+            <div class="bg-gray-200 p-4">
+                <div class="flex flex-row">
+                    <div>
+                        <img class="w-24 inline" src="umtLogo.png" alt="logo" />
+                    </div>
+                    <div class="text-center ml-4">
+                        <h1 class="font-bold inline p-2 ">
+                            University of Management <i>and</i> Technology
+                        </h1>
+                        <h1 class="mt-1 mb-2">Application form for Addmision</h1>
+                        <label for="fall">Fall</label>
+                        <input class="ml-1 mt-3" type="checkbox" name="fall" id="fall">
+                        <label class="ml-2" for="spring">Spring</label>
+                        <input class="ml-1" type="checkbox" name="spring" id="spring">
+                        <label class="ml-2 mr-1">Year</label>
+                        <input class="w-5 h-5 text-center" type="number" min="0" max="9">
+                        <input class="w-5 h-5 text-center" type="number" min="0" max="9">
+                        <input class="w-5 h-5 text-center" type="number" min="0" max="9">
+                        <input class="w-5 h-5 text-center" type="number" min="0" max="9">
+                        <br>
+                        <label for="LahoreCAMPUS">Lahore CAMPUS</label>
+                        <input class="ml-1 mt-6" type="checkbox" name="LahoreCAMPUS" id="LahoreCAMPUS">
+                        <label class="ml-4" for="SailkotCampus">Sialkot Campus</label>
+                        <input class="ml-1" type="checkbox" name="SailkotCampus" id="SailkotCampus">
+                    </div>
+                    <div class="ml-5">
+                        <img class="w-24 h-36" src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="profileImage">
+                    </div>
+                </div>
+                <label class="relative top-1" for="serialN">Serial <i>N</i></label>
+                <input
+                    class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1"
+                    type="text" id="serialN">
+                <br>
+                <label class="relative top-1" for="ProgamofInterest"><b>Progam of Interest</b></label>
+                <input class="mt-4 border-2 border-black w-72 bg-transparent relative top-1" type="text"
+                    id="ProgamofInterest">
+                <br><br>
+                <h1 class="text-xl"><b>Personal Details</b></h1>
+                <div class="flex flex-col">
+                    <div class="flex items-center mt-1">
+                        <label for="name">Name (Block Letters)</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-64"
+                            type="text" id="name">
+                        <p class="ml-3 mr-2">Alumni</p>
+                        <input class="ml-1" type="checkbox" name="AlumniYes" id="AlumniYes">
+                        <label for="AlumniYes" class="ml-2">Yes</label>
+                        <input class=" ml-2" type="checkbox" name="AlumniNo" id="AlumniNo">
+                        <label for="AlumniNo" class=" ml-2">No</label>
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <label for="CNIC">CNIC (If applicable)</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-24"
+                            type="text" id="CNIC">
+                        <label class="ml-3" for="PassportNO">Passport NO</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-20"
+                            type="text" id="PassportNO">
+                        <label class="ml-3" for="Form(B)">Form 'B'</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-20"
+                            type="text" id="Form(B)">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <p class="mr-2">Gender</p>
+                        <input class="ml-1 mt-1" type="checkbox" name="male" id="male">
+                        <label for="male" class=" ml-2">Male</label>
+                        <input class="mt-1 ml-2" type="checkbox" name="Female" id="Female">
+                        <label for="Female" class="ml-2">Female</label>
+                        <label class="ml-3" for="Religion">Religion</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-24"
+                            type="text" id="Religion">
+                        <label class=" ml-4" for="BloodGroup">Blood Group</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-24"
+                            type="text" id="BloodGroup">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <label for="PostalAddress">Postal Address for Correspondense</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-80"
+                            type="text" id="PostalAddress">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-64"
+                            type="text" id="PostalAddress">
+                        <label class="ml-4" for="LocalArea">Local Area</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-56"
+                            type="text" id="LocalArea">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <label class="w-48" for="PermanentAddress">Permanent Address</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-[23.5rem]"
+                            type="text" id="PermanentAddress">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-[35.5rem]"
+                            type="text" id="PermanentAddress">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <label class="" for="Email1">Email (1)</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-52"
+                            type="text" id="Email1">
+                        <label class="ml-4" for="Email2">Email (2)</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-56"
+                            type="text" id="Email2">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <p class="mr-2">Date of Birth</p>
+                        <div class="flex flex-col relative top-1.5">
+                            <div>
+                                <input class="ml-1 w-4 h-5 text-center" type="number" min="0" max="9">
+                                <input class=" w-4 h-5 text-center" type="number" min="0" max="9">
+                            </div>
+                            <label class="text-[8px] text-center">Day</label>
+                        </div>
+                        <div class="flex flex-col relative top-1.5">
+                            <div>
+                                <input class="ml-3 w-4 h-5 text-center" type="number" min="0" max="9">
+                                <input class="w-4 h-5 text-center" type="number" min="0" max="9">
+                            </div>
+                            <label class="ml-3 text-[8px] text-center">Month</label>
+                        </div>
+                        <div class="flex flex-col relative top-1.5">
+                            <div>
+                                <input class="ml-3 w-4 h-5 text-center" type="number" min="0" max="9">
+                                <input class="w-4 h-5 text-center" type="number" min="0" max="9">
+                                <input class="w-4 h-5 text-center" type="number" min="0" max="9">
+                                <input class="w-4 h-5 text-center" type="number" min="0" max="9">
+                            </div>
+                            <label class="ml-2 text-[8px] text-center">Year</label>
+                        </div>
+                        <label class="ml-4" for="Email2">Mobile #</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-20"
+                            type="text" id="Email2">
+                        <label class="ml-4" for="Email2">Res #</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-20"
+                            type="text" id="Email2">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <label class="" for="Domicile">Domicile</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-32"
+                            type="text" id="Domicile">
+                        <label class="ml-4" for="Province">Province</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-32"
+                            type="text" id="Province">
+                        <label class="ml-4" for="City">City</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-32"
+                            type="text" id="City">
+                    </div>
+                    <div class="flex items-center mt-1">
+                        <label class="" for="Domicile">Domicile</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-32"
+                            type="text" id="Domicile">
+                        <p class="ml-3 ">Overseas:</p>
+                        <input class="ml-1" type="checkbox" name="OverseasYes" id="OverseasYes">
+                        <label for="OverseasYes" class="ml-2">Yes</label>
+                        <input class=" ml-2" type="checkbox" name="OverseasNo" id="OverseasNo">
+                        <label for="OverseasNo" class=" ml-2">No</label>
+                        <label class="ml-3" for="Nationality">Nationality</label>
+                        <input
+                            class="border-b border-black bg-transparent px-2 py-1 focus:outline-none relative bottom-2 left-1 w-28"
+                            type="text" id="Nationality">
+                    </div>
+                </div>
+                <h1 class="text-xl mt-1"><b>Personal Details</b></h1>
+                <input class="ml-1" type="checkbox" name="FullResult" id="FullResult">
+                <label for="FullResult" class="ml-2">Full Result</label>
+                <input class=" ml-2" type="checkbox" name="ResultAwaited" id="ResultAwaited">
+                <label for="ResultAwaited" class=" ml-2">Result Awaited</label><br />
+                <p class="text-sm">(If you are currently awaiting results. please indicate the probable date of your
+                    results)</p>
+                <table class="border border-black">
+                    <table class="text-[10px] border border-black  w-[35.5rem]">
+                        <tr class="border border-black text-center">
+                            <th class=" border-2 border-black">level of Education</th>
+                            <th class=" border-2 border-black">Name of School College or University</th>
+                            <th class=" border-2 border-black">Government / Private</th>
+                            <th class=" border-2 border-black">Board / University</th>
+                            <th class=" border-2 border-black">Year</th>
+                            <th class=" border-2 border-black">Subjects</th>
+                            <th class=" border-2 border-black">Total Marks</th>
+                            <th class=" border-2 border-black">Obtained Marks</th>
+                            <th class=" border-2 border-black">Grades / Devision</th>
+                        </tr>
+                        <tr class="border border-black text-center">
+                            <td class=" border-2 border-black">Doctorol</td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                        </tr>
+                        <tr class="border border-black text-center">
+                            <td class=" border-2 border-black">MS / MPhil</td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                        </tr>
+                        <tr class="border border-black text-center">
+                            <td class=" border-2 border-black">Master</td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                        </tr>
+                        <tr class="border border-black text-center">
+                            <td class=" border-2 border-black">Bachelors</td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                        </tr>
+                        <tr class="border border-black text-center">
+                            <td class=" border-2 border-black">Inter / A-level</td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                        </tr>
+                        <tr class="border border-black text-center">
+                            <td class=" border-2 border-black">Matric / O-level</td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                            <td class=" border-2 border-black p-0"><input type="text"
+                                    class="bg-transparent pl-0.5 focus:outline-none w-full"></td>
+                        </tr>
+                    </table>
+                    <p class="text-sm text-center mt-2">UMT-Graduate Studies Application Form</p>
+            </div>
+            <div class="bg-black text-white text-center getheight">
+                <div class="rotate-90">
+                    <p class="hight w-60 text-center text-xl setwidth"><b>Application Form - Graduate Studies</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let hight = document.querySelector('.getheight');
+        let setwidth = document.querySelector('.setwidth');
+        function change(hight,width){
+            width.style.width = `${hight.offsetHeight}px`;
+        }
+        change(hight,setwidth);
+        window.addEventListener('resize', () => {
+            change(hight,setwidth);
+        });
+    </script>
+</body>
+
+</html>
